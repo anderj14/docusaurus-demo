@@ -1,0 +1,88 @@
+import Btn from '@site/src/components/docs/Btn';
+
+
+#React
+
+React is a popular JavaScript library for building user interfaces, particularly single-page applications. It allows developers to create reusable UI components, making the development process more efficient and manageable. Here are some key features of React:
+
+1. Component-Based Architecture: React encourages building encapsulated components that manage their own state, then composing them to make complex UIs.
+
+2. JSX Syntax: JSX is a syntax extension that allows you to write HTML-like code within JavaScript, making it easier to create and visualize UI components.
+
+## Probando imagenes
+![Docusaurus logo](/img/docusaurus.png)
+
+## Probemos code
+
+```jsx title="src/components/HelloDocusaurus.js"
+function HelloDocusaurus() {
+  return <h1>Hello, Docusaurus!</h1>;
+}
+```
+
+```js
+function HighlightSomeText(highlight) {
+  if (highlight) {
+    // highlight-next-line
+    return 'This text is highlighted!';
+  }
+
+  return 'Nothing highlighted';
+}
+
+function HighlightMoreText(highlight) {
+  // highlight-start
+  if (highlight) {
+    return 'This range is highlighted!';
+  }
+  // highlight-end
+
+  return 'Nothing highlighted';
+}
+```
+
+```jsx {1,4-6,11}
+import React from 'react';
+
+function MyComponent(props) {
+  if (props.isBar) {
+    return <div>Bar</div>;
+  }
+
+  return <div>Foo</div>;
+}
+
+export default MyComponent;
+```
+
+## Probando alertas
+
+:::tip[My tip]
+
+Use this awesome feature option
+
+:::
+
+:::danger[Take care]
+
+This action is dangerous
+
+:::
+
+:::caution[Take caution]
+
+This action is warning
+
+:::
+
+:::important[Take important]
+
+This action is important
+
+:::
+
+## Probemos un componente
+
+
+<Btn>Click me 1</Btn>
+<Btn>Click me 2</Btn>
